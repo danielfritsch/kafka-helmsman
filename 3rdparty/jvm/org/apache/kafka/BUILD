@@ -1,16 +1,16 @@
 java_library(
-    name = "kafka_2_12",
+    name = "kafka_2_11",
     visibility = [
         "//visibility:public",
     ],
     exports = [
-        "//external:jar/org/apache/kafka/kafka_2_12",
+        "//external:jar/org/apache/kafka/kafka_2_11",
     ],
     runtime_deps = [
         ":kafka_clients",
         "//3rdparty/jvm/com/101tec:zkclient",
         "//3rdparty/jvm/com/fasterxml/jackson/core:jackson_databind",
-        "//3rdparty/jvm/com/typesafe/scala_logging:scala_logging_2_12",
+        "//3rdparty/jvm/com/typesafe/scala_logging:scala_logging_2_11",
         "//3rdparty/jvm/com/yammer/metrics:metrics_core",
         "//3rdparty/jvm/net/sf/jopt_simple",
         "//3rdparty/jvm/org/apache/zookeeper",
